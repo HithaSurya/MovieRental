@@ -1,15 +1,15 @@
 USE dbMovie
-
 GO
 
 CREATE TABLE dbo.Movie
 (
-	ID	INT PRIMARY KEY,
+	ID	INT,
 	MovieName	VARCHAR(256) NOT NULL,
 	ReleaseDate	DATETIME,
 	RATE Money,
 	CreatedDate	DATETIME DEFAULT GETDATE(),
 	UpdateDate DATETIME,
 	CreatedBy VARCHAR(256),
-	UpdatedBy VARCHAR(256)
+	UpdatedBy VARCHAR(256),
+	CONSTRAINT	PK_Movie PRIMARY KEY(ID)
 )
