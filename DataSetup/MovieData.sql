@@ -55,69 +55,42 @@ FROM
 	UNION ALL 
 	SELECT	3 AS ID, M.Id AS MovieId, 1 AS GenreID
 	FROM	dbo.Movie M
-	WHERE	MovieName = 'Terminator 2'
+	WHERE	MovieName = 'Avenger'
 	UNION ALL 
 	SELECT	4 AS ID, M.Id AS MovieId, 2 AS GenreID
 	FROM	dbo.Movie M
-	WHERE	MovieName = 'Terminator 2'
+	WHERE	MovieName = 'Avenger'
 	UNION ALL 
 	SELECT	5 AS ID, M.Id AS MovieId, 3 AS GenreID
 	FROM	dbo.Movie M
-	WHERE	MovieName = 'Terminator 2'
+	WHERE	MovieName = 'Babys Day Out'
 	UNION ALL 
 	SELECT	6 AS ID, M.Id AS MovieId, 4 AS GenreID
 	FROM	dbo.Movie M
-	WHERE	MovieName = 'Terminator 2'
+	WHERE	MovieName = 'Sixth Sense'
 	UNION ALL 
 	SELECT	7 AS ID, M.Id AS MovieId, 5 AS GenreID
 	FROM	dbo.Movie M
-	WHERE	MovieName = 'Terminator 2'
+	WHERE	MovieName = 'Gravity'
 	UNION ALL 
 	SELECT	8 AS ID, M.Id AS MovieId, 5 AS GenreID
 	FROM	dbo.Movie M
-	WHERE	MovieName = 'Terminator 2'
+	WHERE	MovieName = 'Passengers'
 	UNION ALL 
 	SELECT	9 AS ID, M.Id AS MovieId, 6 AS GenreID
 	FROM	dbo.Movie M
-	WHERE	MovieName = 'Terminator 2'
+	WHERE	MovieName = 'The Notebook'
 	UNION ALL 
 	SELECT	10 AS ID, M.Id AS MovieId, 6 AS GenreID
 	FROM	dbo.Movie M
-	WHERE	MovieName = 'Terminator 2'
+	WHERE	MovieName = 'The Proposal'
 	UNION ALL 
 	SELECT	11 AS ID, M.Id AS MovieId, 7 AS GenreID
 	FROM	dbo.Movie M
-	WHERE	MovieName = 'Terminator 2'
+	WHERE	MovieName = 'Holiday In The Wild'
 	UNION ALL 
 	SELECT	12 AS ID, M.Id AS MovieId, 7 AS GenreID
 	FROM	dbo.Movie M
-	WHERE	MovieName = 'Terminator 2'
+	WHERE	MovieName = '50 First Dates'
 
 ) AS MovieData
-
-
-
-
-INSERT INTO	dbo.MovieGenre(ID, MovieID, GenreID)
-VALUES(5, 3, 3)
-
-INSERT INTO	dbo.MovieGenre(ID, MovieID, GenreID)
-VALUES(6, 4, 4)
-
-INSERT INTO	dbo.MovieGenre(ID, MovieID, GenreID)
-VALUES(7, 5, 5)
-
-INSERT INTO	dbo.MovieGenre(ID, MovieID, GenreID)
-VALUES(8, 6, 5)
-
-INSERT INTO	dbo.MovieGenre(ID, MovieID, GenreID)
-VALUES(9, 7, 6)
-
-INSERT INTO	dbo.MovieGenre(ID, MovieID, GenreID)
-VALUES(10, 8, 6)
-
-INSERT INTO	dbo.MovieGenre(ID, MovieID, GenreID)
-VALUES(11, 9, 7)
-
-INSERT INTO	dbo.MovieGenre(ID, MovieID, GenreID)
-VALUES(12, 10, 7)
