@@ -1,0 +1,17 @@
+USE dbMovie
+GO
+
+CREATE TABLE	dbo.Customer
+(
+	ID INT IDENTITY,
+	FName VARCHAR(256),
+	LName VARCHAR(256),
+	Location VARCHAR(256),
+	RegistrationDate DATETIME,
+	EmailId VARCHAR(256),
+	CreatedDate	DATETIME DEFAULT GETDATE(),
+	UpdateDate DATETIME,
+	CreatedBy VARCHAR(256),
+	UpdatedBy VARCHAR(256),
+	CONSTRAINT	PK_Customer PRIMARY KEY(ID)
+)
